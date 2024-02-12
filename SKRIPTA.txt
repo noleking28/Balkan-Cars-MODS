@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkan Car Mods</title>
+    <style>
+        /* Stilovi za sliku u gornjem delu */
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+        /* Stilovi za tekst dobrodošlice */
+        .welcome-text {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        /* Stilovi za kontejner sa slikama i dugmadima */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .download-button {
+            display: block;
+            width: 120px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 auto;
+            transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slika u gornjem delu -->
+    <img src="putanja_do_vase_slike" alt="Header Image" class="header-image">
+
+    <!-- Tekst dobrodošlice -->
+    <div class="welcome-text">
+        <p>WELCOME TO BALKAN CAR MODS</p>
+    </div>
+
+    <!-- Kontejner za galeriju slika i dugmad -->
+    <div class="gallery-container">
+        <!-- Prvi red -->
+        <div class="gallery-item">
+            <img src="putanja_do_slike_1" alt="Image 1">
+            <a href="#" class="download-button" onclick="changeLink(this)">Add Link</a>
+        </div>
+        <div class="gallery-item">
+            <img src="putanja_do_slike_2" alt="Image 2">
+            <a href="#" class="download-button" onclick="changeLink(this)">Add Link</a>
+        </div>
+        <div class="gallery-item">
+            <img src="putanja_do_slike_3" alt="Image 3">
+            <a href="#" class="download-button" onclick="changeLink(this)">Add Link</a>
+        </div>
+        <div class="gallery-item">
+            <img src="putanja_do_slike_4" alt="Image 4">
+            <a href="#" class="download-button" onclick="changeLink(this)">Add Link</a>
+        </div>
+    </div>
+
+    <!-- Footer sa korisničkim imenom -->
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>@novak_28_bb</p>
+    </footer>
+
+    <script>
+        function changeLink(button) {
+            var link = prompt("Enter the link:");
+            if (link) {
+                button.href = link;
+                button.textContent = "Download";
+            }
+        }
+    </script>
+</body>
+</html>
